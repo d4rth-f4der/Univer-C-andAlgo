@@ -1,0 +1,6 @@
+5
+Foo Fighters: 2024 12 12 Palats Ukraina: concert 12540
+Yolka: 2024 12 31 Kyiv, Sofyiska square: family 25000
+Vsi svoi: 2024 12 18 Andriivsky yzviz, 5, Kyiv: christmas_fare 15000
+Ocean Elzy: 2024 12 19 Palats Sportu: concert 19500
+Santa's party: 2024 12 25 Kraina mriy, Golosiyvky avenue: family 7000
