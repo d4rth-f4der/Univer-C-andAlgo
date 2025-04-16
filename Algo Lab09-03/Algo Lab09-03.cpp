@@ -30,27 +30,19 @@ struct LinkedList {
         while (tempPntr->next) tempPntr = tempPntr->next;
         tempPntr->next = newNode;
     }
-
-    void deleteFirst() {
-        if (!head) return;
-        Node* temp = head;
-        head = head->next;
-        delete temp;
-    }
-
-    void deleteLast() {
-        if (!head) return;
-        if (!head->next) {
-            delete head;
-            head = nullptr;
-            return;
-        }
-        Node* tempPntr = head;
-        while (tempPntr->next->next) tempPntr = tempPntr->next;
-        delete tempPntr->next;
-        tempPntr->next = nullptr;
-    }
 };
+
+LinkedList createListFromEvenFromOtherList(LinkedList& otherList) {
+	LinkedList newList;
+	Node* current = otherList.head;
+	while (current != nullptr) {
+		if (current->data % 2 == 0) {
+			newList.append(current->data);
+		}
+		current = current->next;
+	}
+	return newList;
+}
 
 int main() {
     LinkedList myList;
@@ -62,9 +54,10 @@ int main() {
     myList.append(5);
 
     cout << "Initial list: "; myList.printList();
-    myList.deleteFirst();
-    myList.deleteLast();
-    cout << "Modified list: "; myList.printList();
+
+	LinkedList evenList = createListFromEvenFromOtherList(myList);
+
+    cout << "New even numbers list: "; evenList.printList();
 
     return 0;
 }
