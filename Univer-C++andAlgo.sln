@@ -427,6 +427,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Algo Lab09-03", "Algo Lab09
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Algo Lab09-02", "Algo Lab09-02\Algo Lab09-02.vcxproj", "{C63C45BF-6D69-40D5-B6B7-78212072C46D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Algo Lab10-Example-01", "Algo Lab10-Example-01\Algo Lab10-Example-01.vcxproj", "{9B2FEB87-8948-4E2E-A8E4-40820E9498BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -2131,6 +2133,14 @@ Global
 		{C63C45BF-6D69-40D5-B6B7-78212072C46D}.Release|x64.Build.0 = Release|x64
 		{C63C45BF-6D69-40D5-B6B7-78212072C46D}.Release|x86.ActiveCfg = Release|Win32
 		{C63C45BF-6D69-40D5-B6B7-78212072C46D}.Release|x86.Build.0 = Release|Win32
+		{9B2FEB87-8948-4E2E-A8E4-40820E9498BF}.Debug|x64.ActiveCfg = Debug|x64
+		{9B2FEB87-8948-4E2E-A8E4-40820E9498BF}.Debug|x64.Build.0 = Debug|x64
+		{9B2FEB87-8948-4E2E-A8E4-40820E9498BF}.Debug|x86.ActiveCfg = Debug|Win32
+		{9B2FEB87-8948-4E2E-A8E4-40820E9498BF}.Debug|x86.Build.0 = Debug|Win32
+		{9B2FEB87-8948-4E2E-A8E4-40820E9498BF}.Release|x64.ActiveCfg = Release|x64
+		{9B2FEB87-8948-4E2E-A8E4-40820E9498BF}.Release|x64.Build.0 = Release|x64
+		{9B2FEB87-8948-4E2E-A8E4-40820E9498BF}.Release|x86.ActiveCfg = Release|Win32
+		{9B2FEB87-8948-4E2E-A8E4-40820E9498BF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
