@@ -27,14 +27,14 @@ void addStudent(Student*& head, Student*& tail, int id, Info info, string facult
 void printStudents(Student* head) {
 	Student* temp = head;
 	while (temp) {
-		cout << temp->info.surname << " " << temp->info.name << " (" << temp->faculty << ", " << temp->course << " курс)" << endl;
+		cout << temp->info.surname << " " << temp->info.name << " (" << temp->faculty << ", " << temp->course << " course)" << endl;
 		temp = temp->next;
 	}
 }
 
 void filterByFaculty(Student* head, string faculty) {
 	Student* temp = head;
-	cout << "\nСтуденти факультету" << faculty << ":\n";
+	cout << "\nFaculty students: " << faculty << ":\n";
 	while (temp) {
 		if (temp->faculty == faculty)
 			cout << temp->info.surname << " " << temp->info.name << endl;
@@ -94,5 +94,19 @@ int main() {
 	Student* head = nullptr;
 	Student* tail = nullptr;
 	addStudent(head, tail, 1, Info{ "Ivanenko", "Ivan", "Ivanovich" }, "NNIT", "PD-15", 2);
-	addStudent(head, tail, 3, Info{ "Ivanenko", "Ivan", "Ivanovich" }, "NNIT", "PD-16", 1);
+	addStudent(head, tail, 3, Info{ "Petrenko", "Petro", "Petrovich" }, "NNIT", "PD-16", 1);
+	insertAt(head, tail, Student{ 2, Info{ "Semenov", "Semen", "Semenovich" }, "SOM", "PD-17", 3 }, 1);
+
+	printStudents(head);
+
+	filterByFaculty(head, "NNIT");
+
+	Student* found = findBySurname(head, "Petrenko");
+	if (found) {
+		cout << "\nFound student: " << found->info.surname << " " << found->info.name << endl;
+	}
+	else {
+		cout << "\nStudent not found." << endl;
+	}
+
 }
