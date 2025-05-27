@@ -451,9 +451,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Algo Lab12-Task002", "Algo 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Algo Lab12-Task003", "Algo Lab12-Task003\Algo Lab12-Task003.vcxproj", "{31AB3B5E-1EF6-484D-85CE-5C8F4A5DF4BC}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Algo Lab 13-Example001", "Algo Lab 13-Example001\Algo Lab 13-Example001.vcxproj", "{6FDE6680-05E9-45E8-B622-5C83794A389B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Algo Lab13-Example001", "Algo Lab 13-Example001\Algo Lab 13-Example001.vcxproj", "{6FDE6680-05E9-45E8-B622-5C83794A389B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Algo Lab 13-Example002", "Algo Lab 13-Example002\Algo Lab 13-Example002.vcxproj", "{9AD77DA2-C38E-48E1-97A1-4F0FF24E1CFB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Algo Lab13-Example002", "Algo Lab 13-Example002\Algo Lab 13-Example002.vcxproj", "{9AD77DA2-C38E-48E1-97A1-4F0FF24E1CFB}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Algo Lab13-Example003", "Algo Lab13-Example003\Algo Lab13-Example003.vcxproj", "{8DFA35F9-8D55-438B-A418-6C3A1BB98510}"
 EndProject
@@ -462,6 +462,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Algo Lab13-Task001", "Algo Lab13-Task001\Algo Lab13-Task001.vcxproj", "{B67EDF29-66FC-4BE6-A60B-473009C98F8E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Algo Lab13-Task002", "Algo Lab13-Task002\Algo Lab13-Task002.vcxproj", "{E6F6ED65-ED92-431D-BA59-F610A4175D39}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Algo Lab14-Example001", "Algo Lab14-Example001\Algo Lab14-Example001.vcxproj", "{643CBC45-BC3A-4B2B-B4CE-D28DD51023A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -2311,6 +2313,14 @@ Global
 		{E6F6ED65-ED92-431D-BA59-F610A4175D39}.Release|x64.Build.0 = Release|x64
 		{E6F6ED65-ED92-431D-BA59-F610A4175D39}.Release|x86.ActiveCfg = Release|Win32
 		{E6F6ED65-ED92-431D-BA59-F610A4175D39}.Release|x86.Build.0 = Release|Win32
+		{643CBC45-BC3A-4B2B-B4CE-D28DD51023A4}.Debug|x64.ActiveCfg = Debug|x64
+		{643CBC45-BC3A-4B2B-B4CE-D28DD51023A4}.Debug|x64.Build.0 = Debug|x64
+		{643CBC45-BC3A-4B2B-B4CE-D28DD51023A4}.Debug|x86.ActiveCfg = Debug|Win32
+		{643CBC45-BC3A-4B2B-B4CE-D28DD51023A4}.Debug|x86.Build.0 = Debug|Win32
+		{643CBC45-BC3A-4B2B-B4CE-D28DD51023A4}.Release|x64.ActiveCfg = Release|x64
+		{643CBC45-BC3A-4B2B-B4CE-D28DD51023A4}.Release|x64.Build.0 = Release|x64
+		{643CBC45-BC3A-4B2B-B4CE-D28DD51023A4}.Release|x86.ActiveCfg = Release|Win32
+		{643CBC45-BC3A-4B2B-B4CE-D28DD51023A4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
