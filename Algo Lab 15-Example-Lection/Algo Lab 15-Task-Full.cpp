@@ -14,7 +14,7 @@ struct Node {
 	}
 };
 
-// Обходи бінарного дерева пошуку
+// Обходи бінарного дерева пошуку	- загальне завд 1
 
 void print_DFS_preorder(Node* node) {
 	if (!node) return;
@@ -86,10 +86,11 @@ bool search_recursive(Node* root, int key)
 	return key < root->data ? search_recursive(root->left, key) : search_recursive(root->right, key);
 }
 
-// Додавання вузла за алгоритмом бінарного дерева пошуку
+// Додавання вузла за алгоритмом бінарного дерева пошуку	- загальне завд 2
 
 Node* insert(Node* root, int key) {
 	if (!root) return new Node(key);
+
 	if (key < root->data)
 		root->left =
 		insert(root->left, key);
@@ -98,28 +99,31 @@ Node* insert(Node* root, int key) {
 		if (key > root->data)
 			root->right =
 			insert(root->right, key);
+
 	return root;
 }
 
-// Видалення самого правого вузла
+// Видалення самого правого вузла		- загальне завд 2
 
 Node* deleteRightmost(Node* root) {
 	if (!root) return nullptr;
+
 	if (!root->right) {
-		// Якщо у вузла немає правого нащадка, це і є самий правий вузол
 		Node* leftChild = root->left;
 		delete root;
 		return leftChild;
 	}
-	// Рекурсивно йдемо вправо
+
 	root->right = deleteRightmost(root->right);
+
 	return root;
 }
 
-// Видалення вузла за значенням
+// Видалення вузла за значенням		- загальне завд 3
 
 Node* deleteNode(Node* root, int key) {
 	if (!root) return nullptr;
+
 	if (key < root->data) {
 		root->left = deleteNode(root->left, key);
 	}
@@ -150,10 +154,11 @@ Node* deleteNode(Node* root, int key) {
 			root->right = deleteNode(root->right, minNode->data);
 		}
 	}
+
 	return root;
 }
 
-// додає новий вузол зі значенням N після першого вузла зі значенням K (у порядку обходу в глибину)
+// додає новий вузол зі зн. N після першого вузла зі зн. K	- заг. завд 4
 
 void insert_after_inorder(Node* root, int K, int N) {
 	if (!root) return;
@@ -177,6 +182,7 @@ void insert_after_inorder(Node* root, int K, int N) {
 }
 
 // Варіант 30 - Визначити кількість листів в дереві. Використовувати обхід в ширину
+// (Індивідуальне завд вар 30)
 int count_leaves_bfs(Node* root) {
 	if (!root) return 0;
 	int leaf_count = 0;
